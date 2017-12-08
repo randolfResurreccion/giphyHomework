@@ -1,5 +1,6 @@
 body {
     margin: 30px;
+    background-color: rgb(58, 53, 53);
 }
 
 .jumbotron {
@@ -16,6 +17,6 @@ body {
     width: 145px;
     margin-right:15px;
     margin-bottom:5px;
-    background-color:rgb(135, 192, 238);
+    background-color:rgb(99, 127, 219);
     
 }
