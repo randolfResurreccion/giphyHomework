@@ -39,7 +39,12 @@ $(document).ready(function () {
             var data = response.data;
             console.log(data);
             for (var i = 0; i < data.length; i++) {
+                var p = $("<p>").text("Rating: " + data[i].rating);
+                console.log(data[i].rating);
+                
                 var newImg = $("<img>");
+                
+                
                 newImg.attr("src", data[i].images.original.url);
                 newImg.attr("data-still", data[i].images.original_still.url);
                 
@@ -47,7 +52,9 @@ $(document).ready(function () {
                 newImg.attr("data-state", "still");
                
                 newImg.addClass("imgClass");
+                $("#gifs").append(p);
                 $("#gifs").append(newImg);
+               
                 
             }
         });
